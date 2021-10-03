@@ -20,14 +20,14 @@
             <p> Autor do projeto: Thales Sgarbi Salata </p>    
 
             <!-- SIDEBAR / MENU DE OPÇÕES / ESQUERDA -->
-            <aside>
+            <aside class = "sidebarMenuNavegação">
                     <!-- LOGO -->
                     <img src = "saladfy_logo.png" alt = "Logo Saladfy">  
                 
                 <!-- MENU -->
-                <nav>
+                <nav class = "MenuNavegação">
                     <!-- LISTA DE LINKS (NÃO ORDENADOS) -->
-                    <ul> 
+                    <ul class = "listaLinks"> 
                         <!-- ITEM DE LISTA -->
                         <li> 
                             <a href="index.html"> </a>
@@ -48,34 +48,34 @@
             </aside>
 
             <!-- LISTA DE MÚSICAS / SEÇÃO CANTO SUPERIOR -->
-            <section>
+            <section class = "secaoMusicas">
                 <!-- CABEÇALHO DA SEÇÃO DE MÚSICAS -->
-                <header>
+                <header class = "cabecalho">
                     <!-- "CAIXA" DO USUÁRIO -->
-                    <div>
+                    <div class = "user">
                         <img src="./src/img/user.png" alt="Usuário">
                         <h2>Thales</h2>
                     </div>
                 
-                    <div>
+                    <div class = "qtdMusicas">
                         <p>1158 songs</p>
                     </div>
 
                 </header>
 
                 <!-- CAIXA DA LISTA DE MÚSICAS -->
-                <div>
-                    <button>Pause</button>
+                <div class = "areaListaMusicas">
+                    <button id = "botaoPause">Pause</button>
 
                     <!-- CABEÇALHO QUE REPRESENTA AS INFORMAÇÕES DAS MÚSICAS -->
-                    <div>
+                    <div class = "cabecalhoInfoMusicas">
                         <p> TITLE </p>
                         <p> ARTIST </p>
                         <p> ALBUM </p>
 
                     </div>
                     <!-- LISTA DE MÚSICAS -->
-                    <ul>
+                    <ul class = "listaMusicas">
                         <!-- MÚSICA -->
                         <li>
                             <p>0 Good Enough </p>
@@ -100,30 +100,30 @@
             </section>
 
             <!-- PLAYER / SEÇÃO CANTO INFERIOR -->
-            <section>
+            <section class = "areaPlayer">
                 <!-- CANTO INFERIOR ESQUERDO -->
-                <div>
-                    <figure>
+                <div class = "infoMusicaAtual">
+                    <figure class = "imagemAlbum">
                         <img src = "./src/img/album4.png" alt = "Album Photo">
                         <figcaption>Referência</figcaption>
                     </figure>
 
-                        <h2>Square One</h2>
-                        <p>Coldplay</p>
-                
-                    <!-- CANTO INFERIOR (CENTRO) -->
-                    <div>
-                        <button> Musica anterior </button>
-                        <button> Play/Pause </button>
-                        <button> Próxima Música </button>
-                    </div>
-
-                    <!-- CANTO INFERIOR DIREITO -->
-                    <div>
-                        <input type="range" value="1" step="0.1"> 
-                    </div>
-
+                    <h2>Square One</h2>
+                    <p>Coldplay</p>
                 </div>
+
+                <!-- CANTO INFERIOR (CENTRO) -->
+                <div class = "areaPlayerControles">
+                    <button id = "btnControlPrev"> Musica anterior </button>
+                    <button id = "btnControlPlay"> Play/Pause </button>
+                    <button id = "btnControlNext"> Próxima Música </button>
+                </div>
+
+                <!-- CANTO INFERIOR DIREITO -->
+                <div class = "areaPlayerVolume">
+                    <input type="range" value="1" step="0.1"> 
+                </div>
+
             </section>
 
         </main>
